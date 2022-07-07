@@ -1,0 +1,99 @@
+ 
+<div class="dashboaed" style="color: #E84A5F;font-size: 25px;text-align: center;font-weight: bold;">{{"Tracker.DashBoard"|translate}}</div>
+
+<div class="content-wrapper">
+  <div class="container-fluid">
+
+
+
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-3 col-sm-6 col-12 mb-2 mt-4">
+        <div class="inforide">
+          <div class="row">
+          
+            <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+             
+              <h4>                       
+                <span class="circle">{{projectNumbers}}</span>{{"Tracker.Projects"|translate}}</h4>
+              
+           
+            </div>
+            <div id="chart">
+              <apx-chart
+              [series]="chartOptionPieProject.series"
+              [chart]="chartOptionPieProject.chart"
+              [labels]="chartOptionPieProject.labels"
+              [fill]="chartOptionPieProject.fill"
+              [dataLabels]="chartOptionPieProject.dataLabels"
+              [responsive]="chartOptionPieProject.responsive"
+            ></apx-chart>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-12 mb-6 mt-4">
+        <div class="inforide">
+          <div class="row">
+           
+            <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+              <h4>                       
+                <span class="circle">{{requestsLength}}</span>{{"Tracker.Requests"|translate}}</h4>
+            </div>
+            <div>
+              <apx-chart
+              [series]="chartOptionRequest.series"
+              [chart]="chartOptionRequest.chart"
+              [dataLabels]="chartOptionRequest.dataLabels"
+              [plotOptions]="chartOptionRequest.plotOptions"
+              [yaxis]="chartOptionRequest.yaxis"
+              [legend]="chartOptionRequest.legend"
+              [fill]="chartOptionRequest.fill"
+              [stroke]="chartOptionRequest.stroke"
+              [tooltip]="chartOptionRequest.tooltip"
+              [xaxis]="chartOptionRequest.xaxis"
+            ></apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-12 mb-2 mt-4">
+                <div class="inforide">
+                    <div class="row">
+                       
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+                            <h4>                       
+                              <span class="circle">{{employeeNumber}}</span>{{"Tracker.All Employees"|translate}}</h4>
+                            
+                        </div>
+                        <div id="chart">
+                          <apx-chart
+                            [series]="chartOptionPie.series"
+                            [chart]="chartOptionPie.chart"
+                            [labels]="chartOptionPie.labels"
+                            [fill]="chartOptionPie.fill"
+                            [dataLabels]="chartOptionPie.dataLabels"
+                            [responsive]="chartOptionPie.responsive"
+                          ></apx-chart>
+                        </div>
+                        
+                    </div>
+                </div>
+      </div>
+            
+    </div>
+   
+      <!-- <div style="text-align:center">
+        <apx-chart
+          [series]="chartOptions.series"
+          [chart]="chartOptions.chart"
+          [xaxis]="chartOptions.xaxis"
+          [title]="chartOptions.title"
+        ></apx-chart>
+    
+      </div> -->
+  </div>
+
+   
+</div>

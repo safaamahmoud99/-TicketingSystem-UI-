@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.hrefbutton {
+    display: block;
+    width: 80%;
+    /* height: 30px; */
+    background: #47bebe;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    /* line-height: 30px; */
+    float: right;
+    font-size: 16px;
+}
+.hrefbuttonAr {
+    display: block;
+    width: 80%;
+    height: 30px;
+    background: #47bebe;
+    padding: 3px 0px 0px 0px;
+    margin-right: 50px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 18px;
+    float: left;
+}
+/* .p-dialog
+{
+    max-height: 70% !important ;
+}
+.p-dialog-maximized
+{
+    max-height: 100% !important ; 
+} */
